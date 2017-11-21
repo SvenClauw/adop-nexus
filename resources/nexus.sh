@@ -166,9 +166,4 @@ fi
 chown -R nexus:nexus ${NEXUS_HOME}
  
 # start nexus as the nexus user
-su -c "java \
--Dnexus-work=${SONATYPE_WORK} -Dnexus-webapp-context-path=${CONTEXT_PATH} \
--Xms256M -Xmx512M \
--cp 'conf/:lib/*' \
-${JAVA_OPTS} \
-org.sonatype.nexus.bootstrap.Launcher ${LAUNCHER_CONF}" -s /bin/bash nexus
+su - "${NEXUS_HOME}/start-nexus-repository-manager.sh" -s /bin/bash nexus
