@@ -23,7 +23,7 @@ ENV LDAP_ENABLED=true \
     LDAP_USER_BASE_DN=ou-people \
     LDAP_USER_REAL_NAME_ATTRIBUTE=cn \
     LDAP_GROUP_MEMBER_FORMAT=dn \
-    INSTALL4J_ADD_VM_PARAMS=-Xms256m -Xmx512m -XX:MaxDirectMemorySize=512m -Djava.util.prefs.userRoot=${NEXUS_DATA}/javaprefs
+    INSTALL4J_ADD_VM_PARAMS="-Xms256m -Xmx512m -XX:MaxDirectMemorySize=512m -Djava.util.prefs.userRoot=${NEXUS_DATA}/javaprefs"
 
 USER root
 
