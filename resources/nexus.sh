@@ -166,4 +166,4 @@ fi
 chown -R nexus:nexus ${NEXUS_HOME}
  
 # start nexus as the nexus user
-su - "${NEXUS_HOME}start-nexus-repository-manager.sh" -s /bin/bash nexus
+su -c "${NEXUS_HOME}start-nexus-repository-manager.sh" -s /bin/bash nexus
