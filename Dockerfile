@@ -4,6 +4,7 @@ MAINTAINER Robert Northard, <robert.a.northard>
 
 ENV LDAP_ENABLED=true \
     CONTEXT_PATH=/nexus \
+    NEXUS_DATA=/nexus-data \
     NEXUS_HOME=/opt/sonatype/nexus/ \
     DEBUG_LOGGING=false \
     LDAP_SEARCH_BASE="" \
